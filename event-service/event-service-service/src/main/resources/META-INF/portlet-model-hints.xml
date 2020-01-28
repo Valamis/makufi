@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="fi.valamis.maakportal2.calendar.event.model.Event">
+		<field name="uuid" type="String" />
+		<field name="eventId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="eventName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="startingDate" type="Date" />
+		<field name="endingDate" type="Date" />
+		<field name="timesAdditionalInfo" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="location" type="String" />
+		<field name="address" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="imageUrl" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="description" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="additionalInformation" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="signUpLink" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="linkToEventWebPage" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="categoryIds" type="String" />
+		<field name="eventAuthorName" type="String" />
+		<field name="eventAuthorEmail" type="String" />
+		<field name="eventAuthorPhoneNumber" type="String" />
+		<field name="additionalCompanyIds" type="String">
+			<hint name="max-length">500</hint>
+		</field>
+		<field name="status" type="String" />
+		<field name="authorizationToken" type="String" />
+		<field name="userGivenPassword" type="String" />
+		<field name="adminComment" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="showMap" type="boolean" />
+		<field name="updateUrl" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="eventFriendlyName" type="String">
+			<hint name="max-length">1000</hint>
+		</field>
+		<field name="additionalStartingDates" type="String">
+			<hint name="max-length">4000</hint>
+		</field>
+		<field name="additionalStartingDatesRule" type="String">
+			<hint name="max-length">300</hint>
+		</field>
+	</model>
+</model-hints>

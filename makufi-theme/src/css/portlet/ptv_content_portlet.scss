@@ -1,0 +1,477 @@
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+// Remove back button from dynamic render view
+#portlet_PtvDisplayPortlet {
+    .portlet-icon-back {
+        display: none;
+    }
+}
+
+// Remove guest user toolbar when render weight 0
+.signed-out .portlet-boundary_PtvDisplayPortlet_ {
+    .portlet-topper {
+        display:none;
+    }
+}
+
+#ptv-display-portlet-configuration {
+    .ptv-search-bar {
+        float: none;
+        padding: 0px;
+
+        input {
+            width: 380px;
+        }
+    }
+
+    .config-panel {
+        label {
+            cursor: pointer;
+        }
+    }
+
+    h2 {
+        margin-top: 0px;
+    }
+}
+
+$padding-size: 30px;
+$ptv-border: 1px solid #DBDBDB;
+$channel-content-padding-size: 19px;
+//$base-color: #333333;
+//$ptv-link-color: #1960AB;
+.ptv-content-display {
+    //background-color: green !important;
+//    font-size: 16px;
+//    color: $base-color;
+    letter-spacing: 0;
+//    line-height: 24px;
+
+    h1 {
+//        font-size: 48px;
+//        line-height: 57px;
+//        margin-top: 10px;
+//        margin-bottom: 0px;
+    }
+    
+    .text-area p.noPadding {
+        padding-top: 0px;
+    }
+
+    h2 {
+//        font-size: 24px;
+//        line-height: 34px;
+    }
+
+    p {
+        margin: 0px;
+    }
+
+    a {
+//        color: $ptv-link-color;
+        line-height: 26px;
+
+        &:hover {
+//            color: $ptv-link-color;
+            text-decoration: underline;
+        }
+    }
+
+    .section {
+        padding-top: $padding-size;
+    }
+
+    .section-full {
+        padding-top: $padding-size;
+        padding-bottom: $padding-size;
+        border-bottom: $ptv-border;
+
+        &.small-padding {
+            padding-bottom: 10px;
+        }
+
+    }
+
+    .text-area p {
+        padding-top: $padding-size;
+        margin-bottom: 0px !important;
+    }
+    
+    .invisible {
+        visibility: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .width-50 {
+        margin-bottom: 20px;
+    }
+
+    .ptv-show-more.no-elements {
+        cursor: default;
+//        color: #abacad;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .responsible-organization {
+        margin-top: 10px;
+//        font-size: 15px;
+//        color: #616365;
+    }
+
+    .ptv-accordion {
+        .accordion-heading {
+            cursor: pointer;
+            min-height: 75px;
+            padding-top: 23px;
+            font-size: 1.2em;
+            line-height: 1.4em;
+
+            .heading-text {
+                display: inline-block;
+                max-width: 80%;
+                font-weight: bold;
+            }
+
+            .arrow {
+                float: right;
+                margin-top: 2px;
+//                color: #FE1682;
+            }
+        }
+
+        .accordion-content {
+            overflow-y: hidden;
+            height: auto;
+            -webkit-transition: max-height 0.5s ease-in-out;
+            -moz-transition: max-height 0.5s ease-in-out;
+            -ms-transition: max-height 0.5s ease-in-out;
+            -o-transition: max-height 0.5s ease-in-out;
+            transition: max-height 0.5s ease-in-out;
+            -webkit-transition: padding 0.2s ease-in-out;
+            -moz-transition: padding 0.2s ease-in-out;
+            -ms-transition: padding 0.2s ease-in-out;
+            -o-transition: padding 0.2s ease-in-out;
+            transition: padding 0.2s ease-in-out;
+            max-height: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+
+            &.open {
+                padding-top: 7px;
+                max-height: 2000px;
+                padding-bottom: 50px;
+            }
+        }
+
+        .accordion-item {
+            border-top: $ptv-border;
+
+            &.first {
+                border-top: 0px;
+            }
+
+            &.last {
+                border-bottom: $ptv-border;
+            }
+        }
+
+        &.inner-accordion .accordion-item.last {
+            border-bottom: 0px;
+        }
+    }
+
+    .heading-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        text-align: center;
+        position: relative;
+        float: left;
+        & > .icon {
+            font-size: 1em;
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+
+    .ptv-panel {
+        .ptv-panel-heading {
+            margin: 0px;
+        }
+
+        .icon-heading-text {
+            margin-top: -1px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .icon-desktop {
+            margin-top: 1px;
+        }
+
+        .ptv-panel-urls {
+            margin-top: 5px;
+            padding-left: 0px;
+
+            li {
+                padding-top: 5px;
+            }
+
+            .icon-external-link {
+                display: inline-block;
+                margin-left: 10px;
+                margin-top: 0px;
+                position: relative;
+                top: 1px;
+                text-decoration: none;
+            }
+        }
+
+        .slc-show-more {
+            margin-bottom: 20px;
+        }
+    }
+
+    .ptv-column {
+        .content-wrapper {
+            padding-left: $channel-content-padding-size;
+        }
+    }
+
+    .ptv-panel-heading, .ptv-panel, .ptv-row, .slc-show-more, .other-contact-information, .general-description {
+        @extend %clearfix;
+    }
+
+	.serviceDescription {
+		padding-left: 15px;
+//    	font-size: 14px;
+    	margin-top: 10px;
+    	margin-bottom: 10px;
+    	max-width: 80%;
+    	border-left: 2px solid 
+	}
+
+    .content-marker {
+        float: left;
+        font-size: 1.5em;
+    }
+
+    .stack-small, .width-50 {
+        @extend %clearfix;
+    }
+
+    .width-50 {
+        width: 50%;
+        float: left;
+    }
+
+    .no-ptv-content {
+        min-height: 139px;
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+
+    .slc-service-hours .service-hours {
+        padding-left: 0px;
+    }
+
+    .other-contact-information {
+        padding-top: 20px;
+        padding-left: 30px;
+        background: #F1F2F2;
+
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .ptv-panel {
+        ul {
+            ul {
+                padding-left: 0px;
+            }
+        }
+    }
+
+    .ptv-content-service-channel {
+        .ptv-back-button {
+            cursor: pointer;
+            margin-right: 20px;
+            display: inline-block;
+            float: none;
+        }
+        .relatedServices {
+            margin-bottom: 1em;
+            .relatedService {
+                display: inline-block;
+                .selectedRelatedService {
+                    text-decoration: underline;
+                }
+                &:after {
+                    content: ", ";
+                }
+                &:last-child:after {
+                    content: "";
+                }
+            }
+        }
+        .section-full:first-child {
+            .ptv-sc-serviceLanguages {
+                border-bottom: none;
+                padding-bottom: 0px;
+            }
+        }
+        .relatedServices-description {
+            display: none;
+        }
+    }
+
+    .ptv-content-service {
+        .phone-number {
+            margin-top: 6px;
+        }
+
+        .phone-number ~ .phone-number {
+            margin-top: 15px;
+        }
+
+        .general-description {
+//            font-family: Helvetica;
+//            font-size: 15px;
+            color: #333333;
+            letter-spacing: 0;
+            line-height: 24px;
+
+            .heading-icon {
+                margin-top: $padding-size;
+            }
+
+            .general-description-content {
+                float: left;
+                padding-left: 10px;
+                width: 94%;
+            }
+        }
+    }
+
+    .line-separator {
+        height: 1px;
+        background: #DBDBDB;
+        border-bottom: 1px solid #DBDBDB;
+        width: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.ptv-arrow-color {
+//    color: #FD5608;
+}
+
+.ptv-icon-background-color {
+//    background: #D9222A;
+}
+
+.ptv-icon-color {
+//    color: #fff;
+}
+
+@element .ptv-content-display and (max-width: 600px) {
+    .ptv-content-display {
+        h1 {
+//            font-size: 36px;
+//            line-height: 41px;
+        }
+
+        h2 {
+//            font-size: 20px;
+//            line-height: 29px;
+        }
+
+        .width-50 {
+            float: none;
+            width: 100%;
+        }
+
+        .heading-icon {
+            width: 26px;
+            height: 26px;
+            border-radius: 13px;
+            & > .icon {
+                font-size: 13px;
+            }
+            .icon-desktop {
+                margin-top: 0px;
+            }
+        }
+
+        .other-contact-information {
+            padding-top: 15px;
+            padding-left: 15px;
+
+            h2 {
+                margin-bottom: 11px;
+            }
+        }
+
+        .section-full {
+            padding-top: 25px;
+            padding-bottom: 25px;
+
+            &.small-padding {
+                padding-bottom: 0px;
+            }
+        }
+
+        .text-area p {
+            padding-top: 25px;
+        }
+
+        .section {
+            padding-top: 11px;
+        }
+
+        .ptv-accordion {
+            .accordion-content {
+                padding-bottom: 30px;
+            }
+        }
+
+        .width-50 {
+            margin-bottom: 25px;
+        }
+
+        .responsible-organization {
+            margin-top: 15px;
+        }
+
+        .ptv-content-service {
+            .general-description {
+                .general-description-content {
+                    width: 91%;
+                }
+            }
+        }
+    }
+}

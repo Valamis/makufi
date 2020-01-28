@@ -1,0 +1,450 @@
+{
+    "defaultLanguageId": "fi_FI",
+    "availableLanguageIds": [
+        "fi_FI",
+        "en_US"
+    ],
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Palautelinkin osoite",
+                "en_US": ""
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Feedbacklink",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "Palautelinkin teksti",
+                        "en_US": "Link text"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": "",
+                        "en_US": ""
+                    },
+                    "style": {
+                        "fi_FI": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "fi_FI": "",
+                        "en_US": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "FeedbacklinkText",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "label": {
+                "fi_FI": "Footerin logo",
+                "en_US": "Footer logo"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "image",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "FooterLogo",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-image"
+        },
+        {
+            "label": {
+                "fi_FI": "Ensimmäisen sarakkeen otsikko",
+                "en_US": "Column 1 links"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "String",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Column1Links",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Osoite",
+                "en_US": "Address"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Address",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "textarea"
+        },
+        {
+            "label": {
+                "fi_FI": "Sähköposti",
+                "en_US": "Email"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Email",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Puhelinnumero",
+                "en_US": "Phone"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Phone",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Facebook",
+                "en_US": "Facebook"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Facebook",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "LinkedIn",
+                "en_US": "LinkedIn"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "LinkedIn",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Twitter",
+                "en_US": "Twitter"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Twitter",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Youtube",
+                "en_US": "Youtube"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Youtube",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Instagram",
+                "en_US": "Instagram"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Instagram",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Julkaisija",
+                "en_US": "Author"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Author",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Toisen sarakkeen otsikko",
+                "en_US": "Column 2 links"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Column2Links",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "Linkin osoite",
+                        "en_US": "Link URL"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": "",
+                        "en_US": ""
+                    },
+                    "style": {
+                        "fi_FI": "",
+                        "en_US": ""
+                    },
+                    "tip": {
+                        "fi_FI": "",
+                        "en_US": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "LinkURL1",
+                    "readOnly": false,
+                    "repeatable": true,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text",
+                    "nestedFields": [
+                        {
+                            "label": {
+                                "fi_FI": "Linkin teksti",
+                                "en_US": "Link text"
+                            },
+                            "predefinedValue": {
+                                "fi_FI": "",
+                                "en_US": ""
+                            },
+                            "style": {
+                                "fi_FI": "",
+                                "en_US": ""
+                            },
+                            "tip": {
+                                "fi_FI": "",
+                                "en_US": ""
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "LinkText1",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "text"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

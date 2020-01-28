@@ -1,0 +1,78 @@
+#macro (buildNavItem75 $nav_items)
+    #foreach ($nav_item in $nav_items)
+        #set ($nav_item_attr_has_popup = "")
+        #set ($nav_item_attr_selected = "")
+        #set ($nav_item_css_class = "")
+        #set ($nav_item_add_css_class = "")
+        #if ($nav_item.getLayout().isSelected(true, $themeDisplay.getLayout(), $themeDisplay.getLayout().getAncestorPlid()) ||
+                $nav_item.getLayout().isChildSelected(true, $themeDisplay.getLayout()) ||
+                $nav_item.getLayout().getAnsestors().get(0).isChildSelected(true, $themeDisplay.getLayout()))
+            #set ($nav_item_attr_has_popup = "aria-haspopup='true'")
+            #set ($nav_item_attr_selected = "aria-selected='true'")
+            #set ($nav_item_css_class = "selected")
+            #set ($nav_item_add_css_class = "")
+        #end
+        #set ($layoutName = $nav_item.getName())
+        #set ($link_url = $nav_item.getURL())
+        #set ($nav_item_current = "")
+        #if ($nav_item.getLayout().getAnsestors().get(0).isChildSelected(true, $themeDisplay.getLayout()))
+            #set ($nav_item_current = "current-sibling")
+        #end
+        #if ($themeDisplay.getLayout().equals($nav_item.getLayout()))
+            #set ($nav_item_current = "current")
+            #set ($foundcurrent = true)
+        #end
+        <li class="$nav_item_css_class $nav_item_current hyphenate" role="presentation" id="layout_$nav_item.getLayoutId()">
+            #set ($target = $nav_item.getLayout().getTarget())
+            #set ($hasChildren = $nav_item.hasBrowsableChildren())
+
+            #if (!$foundcurrent)
+                <a aria-labelledby="layout_$nav_item.getLayoutId()" class="open nav-link" $nav_item_attr_has_popup href="$link_url" $target role="menuitem">$layoutName</a>
+            #end
+            #if ($foundcurrent)
+                <a aria-labelledby="layout_$nav_item.getLayoutId()" class="nav-link" $nav_item_attr_has_popup href="$link_url" $target role="menuitem">$layoutName</a>
+            #end
+
+            #if ($hasChildren && !$foundcurrent)
+                <a class="child-toggle"><i class="icon-minus"></i></a>
+                <ul>
+                    #buildNavItem75 ($nav_item.getChildren())
+                </ul>
+            #end
+            #if ($hasChildren && $foundcurrent)
+                <a class="child-toggle"><i class="icon-plus"></i></a>
+                <ul style="display: none">
+                    #buildNavItem75 ($nav_item.getChildren())
+                </ul>
+            #end
+        </li>
+    #end
+#end
+<script>
+    $(document).ready(function() {
+        var fadespeed = 100;
+        $('.inpage-navigation a.child-toggle').click(function(e) {
+            if ($(e.currentTarget).prev().hasClass('open')) {
+                $(e.currentTarget).html('<i class="icon-plus"></i>');
+                $(e.currentTarget).next().fadeOut(fadespeed);
+                $(e.currentTarget).prev().removeClass('open');
+            } else {
+                $(e.currentTarget).html('<i class="icon-minus"></i>');
+                $(e.currentTarget).next().fadeIn(fadespeed);
+                $(e.currentTarget).prev().addClass('open');
+            }
+        });
+    });
+</script>
+<nav class="inpage-navigation hyphenate" aria-label="#language('side-menu')">
+    <ul aria-label="#language('site-pages')" role="menubar">
+        <li class="hyphenate">
+            #if ($entries && $entries.size() > 0)
+                <a class="home" href="/web$themeDisplay.getScopeGroup().getFriendlyURL()"><i class="icon-home">&nbsp;</i>$themeDisplay.getScopeGroupName()</a>
+            #end
+            <ul>#set ($foundcurrent = false)
+                #buildNavItem75 ($entries)
+            </ul>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,118 @@
+{
+    "availableLanguageIds": [
+        "fi_FI",
+        "en_US"
+    ],
+    "defaultLanguageId": "fi_FI",
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Pääkuva",
+                "en_US": "Image"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "image",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Imagealxf",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-image"
+        },
+        {
+            "label": {
+                "fi_FI": "Otsikko",
+                "en_US": ""
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Heading",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Lisätieto",
+                "en_US": ""
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Description",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "textarea"
+        },
+        {
+            "label": {
+                "fi_FI": "Linkin osoite",
+                "en_US": ""
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "linkAddress",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+buildscript {
+    dependencies {
+        classpath group: "com.liferay", name: "com.liferay.gradle.plugins.gulp", version: "2.0.8"
+    }
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven {
+          url "https://repository-cdn.liferay.com/nexus/content/groups/public"
+        }
+    }
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+apply plugin: "com.liferay.gulp"
+apply plugin: 'java'
+
+allprojects {
+    plugins.withId("com.liferay.gulp") {
+        node.nodeVersion = "10.6.0"
+    }
+}
+
+dependencies {
+    compile 'com.liferay:com.liferay.dynamic.data.mapping.api:3.0.0'
+    compile 'com.liferay:com.liferay.site.api:2.0.3'
+    compile 'com.liferay:com.liferay.journal.api:2.0.1'
+    compile 'com.liferay.portal:com.liferay.portal.kernel:1.0.3'
+    compile 'org.osgi:org.osgi.core:6.0.0'
+    compile 'org.osgi:org.osgi.service.component.annotations:1.3.0'
+}
+
+tasks.withType(JavaCompile) {
+    options.fork = true
+    options.incremental = true
+    source = fileTree(dir: 'src/main/java', include: '**/*.java')
+    destinationDir = file('build-gulp/WEB-INF/classes')
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+task listJars {
+    doLast {
+        configurations.compile.each { File file -> println file.name }
+    }
+}
+
+task deploy (dependsOn: gulpDefault, type: Copy) {
+    if (project.hasProperty("deployDir") && project.deployDir) {
+        from "dist"
+        into deployDir
+        include "*.war"
+    }
+}
+
+defaultTasks "clean", "build", "gulpDefault", "deploy"

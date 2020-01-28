@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="fi.valamis.maakportal2.calendar.event.service.impl.EventLocalServiceImpl" id="fi.valamis.maakportal2.calendar.event.service.EventLocalService" />
+	<bean class="fi.valamis.maakportal2.calendar.event.service.impl.EventServiceImpl" id="fi.valamis.maakportal2.calendar.event.service.EventService" />
+	<bean class="fi.valamis.maakportal2.calendar.event.service.persistence.impl.EventPersistenceImpl" id="fi.valamis.maakportal2.calendar.event.service.persistence.EventPersistence" parent="basePersistence" />
+	<bean class="fi.valamis.maakportal2.calendar.event.service.persistence.impl.EventFinderImpl" id="fi.valamis.maakportal2.calendar.event.service.persistence.EventFinder" parent="basePersistence" />
+</beans>

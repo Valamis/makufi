@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE routes PUBLIC "-//Liferay//DTD Friendly URL Routes 7.0.0//EN" "http://www.liferay.com/dtd/liferay-friendly-url-routes_7_0_0.dtd">
+
+<routes>
+    <route>
+        <pattern>/{eventUrlTitle}</pattern>
+        <implicit-parameter name="p_p_id">Calendar</implicit-parameter>
+        <implicit-parameter name="p_p_state_rcv">0</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+        <implicit-parameter name="p_p_mode">view</implicit-parameter>
+        <implicit-parameter name="mvcPath">/viewEvent.jsp</implicit-parameter>
+    </route>
+    <route>
+        <pattern>/{eventUrlTitle}/muokkaus</pattern>
+        <implicit-parameter name="p_p_id">Calendar</implicit-parameter>
+        <implicit-parameter name="p_p_state_rcv">0</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+        <implicit-parameter name="p_p_mode">view</implicit-parameter>
+        <implicit-parameter name="mvcPath">/checkKeyAndToken.jsp</implicit-parameter>
+    </route>
+    <!-- old ID based routes, not used with new events -->
+    <route>
+        <pattern>/{eventId:\d+}</pattern>
+        <implicit-parameter name="p_p_id">Calendar</implicit-parameter>
+        <implicit-parameter name="p_p_state_rcv">0</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+        <implicit-parameter name="p_p_mode">view</implicit-parameter>
+        <implicit-parameter name="mvcPath">/viewEvent.jsp</implicit-parameter>
+    </route>
+    <route>
+        <pattern>/{eventId:\d+}/muokkaus</pattern>
+        <implicit-parameter name="p_p_id">Calendar</implicit-parameter>
+        <implicit-parameter name="p_p_state_rcv">0</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+        <implicit-parameter name="p_p_mode">view</implicit-parameter>
+        <implicit-parameter name="mvcPath">/checkKeyAndToken.jsp</implicit-parameter>
+    </route>
+    <route>
+        <pattern>/{eventId:\d+}/{eventTitle}</pattern>
+        <implicit-parameter name="p_p_id">Calendar</implicit-parameter>
+        <implicit-parameter name="p_p_state_rcv">0</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+        <implicit-parameter name="p_p_mode">view</implicit-parameter>
+        <implicit-parameter name="mvcPath">/viewEvent.jsp</implicit-parameter>
+    </route>
+    <route>
+        <pattern>/{eventId:\d+}/{eventTitle}/muokkaus</pattern>
+        <implicit-parameter name="p_p_id">Calendar</implicit-parameter>
+        <implicit-parameter name="p_p_state_rcv">0</implicit-parameter>
+        <implicit-parameter name="p_p_lifecycle">0</implicit-parameter>
+        <implicit-parameter name="p_p_state">normal</implicit-parameter>
+        <implicit-parameter name="p_p_mode">view</implicit-parameter>
+        <implicit-parameter name="mvcPath">/checkKeyAndToken.jsp</implicit-parameter>
+    </route>
+</routes>

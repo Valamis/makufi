@@ -1,0 +1,5 @@
+Bundle-Name: calendar-portlet
+Bundle-SymbolicName: fi.valamis.maakportal2.calendar
+Bundle-Version: 1.0.0
+Export-Package: fi.valamis.maakportal2.calendar.constants
+Include-Resource: @commons-lang3-3.8.1.jar

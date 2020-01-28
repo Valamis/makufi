@@ -1,0 +1,154 @@
+$background-color: #333333;
+$divider-line-color: #4d4d4d;
+$link-text-color: #f2f2f2;
+
+#wrapper .header-wrapper .header-content-nav {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    .header-nav-wrapper {
+        text-align: center;
+        ul {
+            list-style-type: none;
+            padding: 0px;
+            margin: 0px;
+            display: inline-block;
+            li {
+                display: inline-block;
+                a {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 0.85em;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                    padding-top: 17px;
+                    padding-bottom: 14px;
+                    display: block;
+                    letter-spacing: 1.5px;
+                    line-height: 19px;
+                }
+                a:hover {
+                    color: $link-text-color;
+                    background-color: $background-color;
+                }
+            }
+        }
+        ul li .open {
+            color: $link-text-color;
+            background-color: $background-color;
+        }
+        ul li a {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        /*
+        ul.open > .top-children-container {
+            overflow: auto;
+            -webkit-box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.2);
+            box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.2);
+        }
+        */
+        .menu-item {
+            &:hover, &:focus {
+                .top-children-container {
+                    display: block;
+                }
+                color: lighten($link-text-color, 10%);
+                background-color: lighten($background-color, 10%);
+            }
+            .top-children-container {
+                position: absolute;
+                display: none;
+                z-index: 1000;
+                height: auto;
+                width: 100%;
+                background-color: $background-color;
+                min-height: 200px;
+                left: 0px;
+                top:50px;
+                color: $link-text-color;
+                /*overflow: -webkit-paged-x;*/ // depricate
+                -webkit-box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.2);
+                box-shadow: 5px 10px 20px 0 rgba(0,0,0,0.2);
+
+                a.navigation-heading,
+                a.navigation-heading:link,
+                a.navigation-heading:visited {
+                    padding: 25px;
+                    width: 100%;
+                    float:left;
+                    text-align: left;
+                    font-size: 20px;
+                    border-bottom: 2px solid $divider-line-color;
+                    color: $link-text-color;
+                    &:hover {
+                        color: lighten($link-text-color, 10%);
+                        background-color: lighten($background-color, 10%);
+                    }
+                }
+                .direct-child-container {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                }
+                .menu-item {
+                    color: $link-text-color;
+                    button {
+                        margin-top: -50px;
+                        float: right;
+                        height: 50px;
+                        width: 50px;
+                        border: 0;
+                        color: $link-text-color;
+                        background-color: $background-color;
+                    }
+                    a.menu-item-link:link,
+                    a.menu-item-link:visited {
+                        color: $link-text-color;
+                    }
+                    a.menu-item-link {
+                        color: $link-text-color;
+                        margin-right: 50px;
+                        &:hover {
+                            color: lighten($link-text-color, 10%);
+                            background-color: lighten($background-color, 10%);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .direct-child-container {
+                border-right: 2px solid $divider-line-color;
+                .menu-item-sub-menu {
+                    width: 100%;
+                    float: left;
+                    text-align: left;
+                    .menu-item {
+                        width: 100%;
+                        .direct-child-container  {
+                        left: 100%;
+                        width: 100%;
+                        top: 0px;
+                        }
+                    }
+                }
+            }
+            .direct-child-container {
+                .direct-child-container {
+                    .direct-child-container {
+                        border-right: none;
+                        .direct-child-container {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .layout-children-container {
+                position: absolute;
+                top: 0px;
+                z-index: 0;
+                height: 0px;
+                width: 100%;
+            }
+        }
+    }
+}

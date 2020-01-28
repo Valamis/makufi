@@ -1,0 +1,9 @@
+Bundle-Name: event-service-api
+Bundle-SymbolicName: fi.valamis.maakportal2.calendar.event.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	fi.valamis.maakportal2.calendar.event.exception,\
+	fi.valamis.maakportal2.calendar.event.model,\
+	fi.valamis.maakportal2.calendar.event.service,\
+	fi.valamis.maakportal2.calendar.event.service.persistence
+-includeresource: META-INF/service.xml=../event-service-service/service.xml

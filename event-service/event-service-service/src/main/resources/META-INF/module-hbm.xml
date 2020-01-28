@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="fi.valamis.maakportal2.calendar.event.model.Event" />
+	<class name="fi.valamis.maakportal2.calendar.event.model.impl.EventImpl" table="Calendar_Event">
+		<id name="eventId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property column="uuid_" name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="eventName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="startingDate" type="org.hibernate.type.TimestampType" />
+		<property name="endingDate" type="org.hibernate.type.TimestampType" />
+		<property name="timesAdditionalInfo" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="location" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="imageUrl" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="description" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="additionalInformation" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="signUpLink" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="linkToEventWebPage" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="categoryIds" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="eventAuthorName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="eventAuthorEmail" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="eventAuthorPhoneNumber" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="additionalCompanyIds" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="authorizationToken" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userGivenPassword" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="adminComment" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="showMap" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="updateUrl" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="eventFriendlyName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="additionalStartingDates" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="additionalStartingDatesRule" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

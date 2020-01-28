@@ -1,0 +1,4 @@
+Bundle-Name: event-rest
+Bundle-SymbolicName: fi.valamis.maakportal2.events
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration

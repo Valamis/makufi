@@ -1,0 +1,64 @@
+{
+    "defaultLanguageId": "fi_FI",
+    "availableLanguageIds": [
+        "fi_FI",
+        "en_US"
+    ],
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Kuva",
+                "en_US": "Background image"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "image",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "BackgroundImage",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-image"
+        },
+        {
+            "label": {
+                "fi_FI": "Sivun otsikko",
+                "en_US": "Page title"
+            },
+            "predefinedValue": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "style": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "tip": {
+                "fi_FI": "",
+                "en_US": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "PageTitle",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }
+    ]
+}

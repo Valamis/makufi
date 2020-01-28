@@ -1,0 +1,147 @@
+{
+    "availableLanguageIds": [
+        "fi_FI"
+    ],
+    "defaultLanguageId": "fi_FI",
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Otsikko"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Otsikko",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Kuvaus"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "html",
+            "fieldNamespace": "ddm",
+            "indexType": "text",
+            "localizable": true,
+            "name": "Kuvaus",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-text-html"
+        },
+        {
+            "label": {
+                "fi_FI": "Napin URL linkki"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "NapinURLLinkki",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Avaa uuteen välilehteen"
+            },
+            "predefinedValue": {
+                "fi_FI": false
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "NapinURLLinkkiBlank",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "fi_FI": "Napin teksti"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": "border: 1px solid red"
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "NapinTeksti",
+            "readOnly": false,
+            "repeatable": false,
+            "required": true,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Napin lisäteksti"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "",
+            "localizable": true,
+            "name": "NapinLisateksti",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        }
+    ]
+}

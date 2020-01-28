@@ -1,0 +1,152 @@
+{
+    "availableLanguageIds": [
+        "fi_FI"
+    ],
+    "defaultLanguageId": "fi_FI",
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Uutisen otsikko"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": "Tällä otsikolla artikkeli löytyy listauksista sekä tämä tulee uutisen otsikoksi"
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "articleTitle",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "Uutisen lyhennelmä"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": "Tämä teksti näytetään kuvallisissa nostoissa. Tässä pitäisi kiteyttää "
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "articleIngress",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        },
+        {
+            "label": {
+                "fi_FI": "Uutisnostossa käytettävä kuva"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": "Tämä kuva näytetään uutisnostossa, jossa kuvat ovat käytössä"
+            },
+            "dataType": "image",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "articleThumbnail",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-image",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "Näytä kuva myös koko uutisen alussa"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": false
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "boolean",
+                    "indexType": "",
+                    "localizable": false,
+                    "name": "useAsMainImage",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "checkbox"
+                }
+            ]
+        },
+        {
+            "label": {
+                "fi_FI": "Artikkelin ingressi"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": "Johdatus artikkeliin, näytetään otsikon jälkeen ennen varsinaista tarinaa"
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "articleContentIngress",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Artikkelin sisältö"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "html",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "articleContent",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-text-html"
+        }
+    ]
+}

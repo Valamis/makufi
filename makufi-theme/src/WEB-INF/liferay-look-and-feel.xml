@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!DOCTYPE look-and-feel PUBLIC "-//Liferay//DTD Look and Feel 7.0.0//EN" "http://www.liferay.com/dtd/liferay-look-and-feel_7_0_0.dtd">
+
+<look-and-feel>
+	<compatibility>
+		<version>7.0.0+</version>
+	</compatibility>
+	<theme id="makufi-theme" name="Makufi theme">
+		<template-extension>ftl</template-extension>
+		<settings>
+
+            <setting configurable="true" key="site-background-color" value="#cccccc" />
+
+            <setting configurable="true" key="header-tekstit" value="#808080" />
+            <setting configurable="true" key="header-icons" value="#808080" />
+            <setting configurable="true" key="header-background" value="#e6e6e6" />
+
+            <setting configurable="true" key="footer-text" value="#ffffff" />
+            <setting configurable="true" key="footer-icons" value="#666666" />
+            <setting configurable="true" key="footer-background" value="#666666" />
+
+            <setting configurable="true" key="link" value="#666666" />
+            <setting configurable="true" key="linkActive" value="#666666" />
+            <setting configurable="true" key="link-hover" value="#000000" />
+
+            <setting configurable="true" key="hero-text" value="#ffffff" />
+
+            <setting configurable="true" key="main-content-icons" value="#666666" />
+            <setting configurable="true" key="main-content-header-text" value="#666666" />
+            <setting configurable="true" key="main-content-text" value="#8c8c8c" />
+            <setting configurable="true" key="main-content-text-dimmed" value="#8c8c8c" />
+            <setting configurable="true" key="main-content-background" value="#ffffff" />
+            <setting configurable="true" key="main-content-box-divider-color" value="#f2f2f2" />
+
+            <setting configurable="true" key="main-content-box-background" value="#e6e6e6" />
+            <setting configurable="true" key="main-content-box-text-over-image" value="#ffffff" />
+            <setting configurable="true" key="main-content-box-text" value="#666666" />
+
+            <setting configurable="true" key="cookie-text" value="#ffffff" />
+            <setting configurable="true" key="cookie-background" value="#666666" />
+
+            <setting configurable="true" key="alert-background" value="#d32a46" />
+            <setting configurable="true" key="alert-text" value="#ffffff">
+                <![CDATA[ 
+                    $(function() {
+                        $('#[@NAMESPACE@]themeContainer').find('input').each(function() {
+                            if ($(this).val().indexOf('#') == 0) {
+                                var id = $(this)[0].id;
+                                $(this).parent().append('<div id="'+id+'_color" style="position:absolute;z-index:0;margin-top:-30px;border:1px solid #ccc;right:20px;width:25px;height:25px;background-color:'+ $(this).val() +';"></div>');
+                                $(this).keyup(changebg);
+                                $(this).change(changebg);
+                            }
+                        });
+                        
+                        function changebg(){
+                            if ($(this).val().indexOf('#') == 0) {
+                                $('#'+$(this)[0].id+'_color').css({'background-color':$(this).val(),'border':'1px solid #ccc'});
+                            } else {
+                                $('#'+$(this)[0].id+'_color').css({'background-color':'','border':'none'});
+                            }
+                        }
+                    });
+                ]]>
+            </setting>
+		</settings>
+		<portlet-decorator id="barebone" name="Barebone">
+			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="borderless" name="Borderless">
+    		<default-portlet-decorator>true</default-portlet-decorator>
+    		<portlet-decorator-css-class>portlet-borderless</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="decorate" name="Decorate">
+			<default-portlet-decorator>false</default-portlet-decorator>
+			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
+		</portlet-decorator>
+	</theme>
+</look-and-feel>
+
+

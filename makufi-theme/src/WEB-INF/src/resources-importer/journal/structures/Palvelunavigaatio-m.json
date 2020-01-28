@@ -1,0 +1,244 @@
+{
+    "availableLanguageIds": [
+        "fi_FI"
+    ],
+    "defaultLanguageId": "fi_FI",
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Osion otsikko"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "OsionOtsikko",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Osion kuvaus"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "OsionKuvaus",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Korosta automaattisesti kahden palstan leveydelle, kun rivejä on yli"
+            },
+            "predefinedValue": {
+                "fi_FI": "6"
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "integer",
+            "fieldNamespace": "ddm",
+            "indexType": "",
+            "localizable": false,
+            "name": "maxRowsBeforeCols",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-integer"
+        },
+        {
+            "label": {
+                "fi_FI": "Otsikko"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Otsikko",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "Alaotsikko"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "kuvausNumerot",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Korosta kokopalstan leveydelle"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": false
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "boolean",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "KorostaKokopalstanLeveydelle",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "checkbox"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Kuva"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "image",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "Kuva",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-image"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Linkin teksti"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "LinkinTeksti",
+                    "readOnly": false,
+                    "repeatable": true,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text",
+                    "nestedFields": [
+                        {
+                            "label": {
+                                "fi_FI": "Linkin URL osoite"
+                            },
+                            "predefinedValue": {
+                                "fi_FI": ""
+                            },
+                            "style": {
+                                "fi_FI": ""
+                            },
+                            "tip": {
+                                "fi_FI": ""
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "LinkkiSivulle",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "text"
+                        },
+                        {
+                            "label": {
+                                "fi_FI": "Avataanko linkki uuteen välilehteen"
+                            },
+                            "predefinedValue": {
+                                "fi_FI": false
+                            },
+                            "style": {
+                                "fi_FI": ""
+                            },
+                            "tip": {
+                                "fi_FI": ""
+                            },
+                            "dataType": "boolean",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "valilehti",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "checkbox"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

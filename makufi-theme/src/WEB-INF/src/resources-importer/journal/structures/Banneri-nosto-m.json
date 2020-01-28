@@ -1,0 +1,57 @@
+{
+  "availableLanguageIds": [
+    "fi_FI"
+  ],
+  "defaultLanguageId": "fi_FI",
+  "fields": [
+    {
+      "label": {
+        "fi_FI": "Banneri kuva"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "image",
+      "fieldNamespace": "ddm",
+      "indexType": "text",
+      "localizable": true,
+      "name": "BanneriKuva",
+      "readOnly": false,
+      "repeatable": true,
+      "required": false,
+      "showLabel": true,
+      "type": "ddm-image",
+      "nestedFields": [
+        {
+          "label": {
+            "fi_FI": "Linkki"
+          },
+          "predefinedValue": {
+            "fi_FI": ""
+          },
+          "style": {
+            "fi_FI": ""
+          },
+          "tip": {
+            "fi_FI": ""
+          },
+          "dataType": "string",
+          "indexType": "keyword",
+          "localizable": true,
+          "name": "Linkki",
+          "readOnly": false,
+          "repeatable": false,
+          "required": false,
+          "showLabel": true,
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

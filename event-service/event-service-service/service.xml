@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.0.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_0_0.dtd">
+
+<service-builder package-path="fi.valamis.maakportal2.calendar.event">
+	<namespace>Calendar</namespace>
+	<entity local-service="true" name="Event" remote-service="true" uuid="true">
+		<column name="eventId" primary="true" type="long" />
+		<column name="groupId" type="long" />
+		<column name="companyId" type="long" />
+
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<column name="eventName" type="String" />
+		<column name="startingDate" type="Date" />
+		<column name="endingDate" type="Date" />
+		<column name="timesAdditionalInfo" type="String" />
+		<column name="location" type="String" />
+		<column name="address" type="String" />
+		<column name="imageUrl" type="String" />
+		<column name="description" type="String" />
+		<column name="additionalInformation" type="String" />
+		<column name="signUpLink" type="String" />
+		<column name="linkToEventWebPage" type="String" />
+		<column name="categoryIds" type="String" />
+		<column name="eventAuthorName" type="String" />
+		<column name="eventAuthorEmail" type="String" />
+		<column name="eventAuthorPhoneNumber" type="String" />
+		<column name="additionalCompanyIds" type="String" />
+		<column name="status" type="String" />
+		<column name="authorizationToken" type="String" />
+		<column name="userGivenPassword" type="String" />
+		<column name="adminComment" type="String" />
+        <column name="showMap" type="boolean" />
+        <column name="updateUrl" type="String" />
+        <column name="eventFriendlyName" type="String" />
+        <column name="additionalStartingDates" type="String" />
+        <column name="additionalStartingDatesRule" type="String" />
+
+		<order by="asc">
+			<order-column name="startingDate" />
+		</order>
+
+		<finder name="startingDate" return-type="Collection">
+			<finder-column name="startingDate" comparator="&gt;" />
+			<finder-column name="companyId" />
+		</finder>
+		
+		<finder name="statusAndCompanyId" return-type="Collection">
+			<finder-column name="status" />
+			<finder-column name="companyId" />
+		</finder>
+		
+		<finder name="statusDateAndCompanyId" return-type="Collection">
+			<finder-column name="status" />
+			<finder-column name="startingDate" comparator="&gt;"/>
+			<finder-column name="companyId" />
+		</finder>
+		
+		<finder name="statusEndingDateAndCompanyId" return-type="Collection">
+			<finder-column name="status" />
+			<finder-column name="endingDate" comparator="&gt;"/>
+			<finder-column name="companyId" />
+		</finder>
+
+        <finder name="eventFriendlyName" return-type="Collection">
+            <finder-column name="eventFriendlyName" />
+        </finder>
+		
+		<reference entity="AssetCategory" package-path="com.liferay.portlet.asset" />
+		<reference entity="AssetTag" package-path="com.liferay.portlet.asset" />
+	</entity>
+</service-builder>

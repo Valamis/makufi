@@ -1,0 +1,149 @@
+{
+    "availableLanguageIds": [
+        "fi_FI"
+    ],
+    "defaultLanguageId": "fi_FI",
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Osion otsikko"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "OsionOtsikko",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Otsikko"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "Otsikko",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "Kuvaus"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "text",
+                    "localizable": true,
+                    "name": "kuvaus",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Kuva"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "image",
+                    "fieldNamespace": "ddm",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "Kuva",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-image"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Linkin URL osoite"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "text",
+                    "localizable": true,
+                    "name": "LinkkiSivulle",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Avataanko linkki uuteen välilehteen"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": false
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "boolean",
+                    "indexType": "",
+                    "localizable": false,
+                    "name": "valilehti",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "checkbox"
+                }
+            ]
+        }
+    ]
+}

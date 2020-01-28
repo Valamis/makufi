@@ -1,0 +1,104 @@
+{
+    "availableLanguageIds": [
+        "fi_FI"
+    ],
+    "defaultLanguageId": "fi_FI",
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Erotin"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "imglist",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": false,
+            "type": "ddm-separator",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "Kuva"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "image",
+                    "fieldNamespace": "ddm",
+                    "indexType": "text",
+                    "localizable": true,
+                    "name": "img",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "ddm-image"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Linkin teksti"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "LinkinTeksti",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Linkki"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "link",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                }
+            ]
+        }
+    ]
+}

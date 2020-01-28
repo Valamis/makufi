@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="30px" height="36px" viewBox="0 0 30 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.2 (28276) - http://www.bohemiancoding.com/sketch -->
+    <title>file-video</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Aalto---Style-Guide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Styles" transform="translate(-535.000000, -3699.000000)">
+            <g id="Icons" transform="translate(30.000000, 3319.000000)">
+                <g transform="translate(5.000000, 0.000000)" id="file-video">
+                    <g transform="translate(500.000000, 380.000000)">
+                        <path d="M22.5,10.5 C20.8431667,10.5 19.5,9.15683333 19.5,7.5 L19.5,0 L3,0 C1.34316667,0 0,1.34316667 0,3 L0,33 L6,33 L24,33 L30,33 L30,10.5 L22.5,10.5 Z" id="Fill-1" fill="#EBECED"></path>
+                        <path d="M6,16.0058587 C6,14.8980535 6.8926228,14 7.99508929,14 L22.0049107,14 C23.1067681,14 24,14.8970601 24,16.0058587 L24,25.9941413 C24,27.1019465 23.1073772,28 22.0049107,28 L7.99508929,28 C6.8932319,28 6,27.1029399 6,25.9941413 L6,16.0058587 Z M13,18 L13,18.0003464 L13,23.999567 L13,24 L13.0003333,23.9997402 L18,20.9999567 L13.00025,18.0001732 L13,18 Z" id="Combined-Shape" fill="#707173"></path>
+                        <path d="M19.5,0 L19.5,7.5 C19.5,9.15683333 20.8431667,10.5 22.5,10.5 L30,10.5 L19.5,0 Z" id="Fill-3" fill="#D6D8DA"></path>
+                        <path d="M24,33 L6,33 L0,33 C0,34.6568333 1.34316667,36 3,36 L27,36 C28.6568333,36 30,34.6568333 30,33 L24,33 Z" id="Fill-5" fill="#EBECED"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
