@@ -4,7 +4,7 @@ This repository contains the Maakunnallinen Liferay 7 theme and the event calend
 
 # Contact
 
-TODO
+Valamis Group Oy [https://www.valamis.com/]
 
 # License
 
