@@ -1,6 +1,6 @@
 # Description
 
-TODO
+This repository contains the Maakunnallinen Liferay 7 theme and the event calendar component.
 
 # Contact
 
