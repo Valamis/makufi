@@ -226,7 +226,7 @@
                 <% 
                 String mapurl = "";
                 if (e != null && e.getShowMap()) {
-                    mapurl = "https://www.google.com/maps/embed/v1/place?q=" + URLEncoder.encode(e.getAddress(), "UTF-8").replace("+","%20") + "&key=AIzaSyDHcFbnjUftOXsR5YL1VPEksE1DDVviBE8";
+                    mapurl = "https://www.google.com/maps/embed/v1/place?q=" + URLEncoder.encode(e.getAddress(), "UTF-8").replace("+","%20") + "&key=";
                 } 
                 %>
                 <iframe 
@@ -552,7 +552,7 @@
     $('#<portlet:namespace/>address').change(changeIframeUrl);
     $('#<portlet:namespace/>postalCode').change(changeIframeUrl);
     $('#<portlet:namespace/>city').change(changeIframeUrl);
-    var googleMapsApiKey = 'AIzaSyDHcFbnjUftOXsR5YL1VPEksE1DDVviBE8';
+    var googleMapsApiKey = '';
     function changeIframeUrl(e) {
         var address = $('#<portlet:namespace/>address').val() +','+ $('#<portlet:namespace/>postalCode').val() +','+ $('#<portlet:namespace/>city').val() +',Finland';
         var attribSrc = $('#<portlet:namespace/>linkToEventWebPage').val();
