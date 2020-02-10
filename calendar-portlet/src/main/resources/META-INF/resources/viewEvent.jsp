@@ -109,7 +109,7 @@
         <% 
         String mapurl = "";
         if (e != null && e.getShowMap()) {
-            mapurl = "https://www.google.com/maps/embed/v1/place?q=" + URLEncoder.encode(e.getAddress(), "UTF-8").replace("+","%20") + "&key=AIzaSyDHcFbnjUftOXsR5YL1VPEksE1DDVviBE8";
+            mapurl = "https://www.google.com/maps/embed/v1/place?q=" + URLEncoder.encode(e.getAddress(), "UTF-8").replace("+","%20") + "&key=";
         } 
         %>
         <iframe 
