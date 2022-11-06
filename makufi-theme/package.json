@@ -13,7 +13,7 @@
 		"version": "7.0"
 	},
 	"devDependencies": {
-		"gulp": "^3.8.10",
+		"gulp": "^4.0.2",
 		"del": "2.2.2",
 		"liferay-theme-tasks": "*",
 		"liferay-theme-deps-7.0": "*",
